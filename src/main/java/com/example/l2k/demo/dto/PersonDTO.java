@@ -24,7 +24,7 @@ public class PersonDTO {
         return name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
