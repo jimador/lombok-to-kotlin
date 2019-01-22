@@ -22,7 +22,7 @@ public class PersonResource {
 
     @PostMapping("/persons/{nickName}")
     public ResponseEntity<PersonDTO> updateNickname(@PathVariable("nickName") String nickName) {
-        PersonDTO personDTO = new PersonDTO("John", 22);
+        PersonDTO personDTO = new PersonDTO();
         personDTO.setNickName(nickName);
 
         return ResponseEntity.ok(personDTO);
